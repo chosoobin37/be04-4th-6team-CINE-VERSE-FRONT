@@ -37,7 +37,7 @@ def fetch_and_save_movies():
     file_path = r'/Users/chosoobin/be04-4th-6team-CINE-VERSE/be04-4th-6team-CINE-VERSE-FRONT/CINEVERSE_FRONT/cine-verse/public/top_10_movies.json'
     top_10_movies.to_json(file_path, force_ascii=False, orient='index', indent=2)
 
-    print(f"파일이 저장되었습니다: {file_path}")
+    print(f"파일이 저장되었습니다. 경로: {file_path}")
 
 schedule.every(1).hours.do(fetch_and_save_movies)
 
